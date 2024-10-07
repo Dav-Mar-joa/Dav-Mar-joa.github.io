@@ -3,10 +3,191 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello DAVID</title>
+    <title>Portfolio</title>
+    <style>
+        /* Style de base */
+        body {
+            background-color: #1a1a2e;
+            color: #f5f5f5;
+            font-family: 'Press Start 2P', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+        
+        /* Titre principal */
+        h1 {
+            color: #00ffcc;
+            text-align: center;
+            font-size: 2.5rem;
+            margin: 30px 0;
+            /* text-shadow: 2px 2px 0 #ff006e, -2px -2px 0 #ff006e, -2px 2px 0 #ff006e, 2px -2px 0 #ff006e; */
+        }
+
+        /* Conteneur des projets */
+        .items {
+            width: 90%;
+            /* max-width: 1200px; */
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        /* Style de chaque projet */
+        .item {
+            background-color: #16213e;
+            background-color: #16213e;
+            border: 2px solid #00ffcc;
+            border-radius: 8px;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+            box-shadow: 0px 0px 15px rgba(0, 255, 204, 0.5);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        .item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 0px 20px rgba(0, 255, 204, 0.8);
+        }
+
+        /* Liste des technologies */
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            color: #ffcc00;
+            text-align: center;
+            flex: 1 1 25%;
+            min-width: 180px;
+        }
+        
+        ul li {
+            margin: 5px 0;
+        }
+        
+        /* Images */
+        img {
+            height: auto;
+            flex: 1 1 20%;
+            
+            max-width: 300px;
+            
+            
+            border-radius: 8px;
+            border: 2px solid #ff006e;
+            transition: transform 0.2s, border-color 0.2s;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+            border-color: #00ffcc;
+        }
+
+        /* Responsivité */
+        @media (max-width: 768px) {
+            .item {
+                flex-direction: column;
+                align-items: center;
+            }
+            img, ul {
+                flex-basis: 100%;
+                max-width: 90%;
+            }
+        }
+       
+        .itemTitle {
+            text-align: center;
+            color: #f5f5f5;
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            font-family: 'Press Start 2P', Arial, sans-serif;
+            text-shadow: 1px 1px 0 #ff006e, -1px -1px 0 #ff006e;
+        }
+         .descriptionItems{
+            text-align: center;
+            text-align: justify;
+        }
+        .imageAndroidMax{
+            /* max-height: 300px; /* Ajuste la hauteur maximale selon tes besoins */
+            width: auto;
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello DAVID</h1>
-    <h2>Dans git hub !!</h2>
+    <h1>Portfolio de David Martins</h1>
+    <!-- item 1 -->
+    <p class="itemTitle">Jeux multijoueurs en ligne</p>
+    <div class="items">
+       
+        <div class="item">
+           
+            <ul>
+                <li><strong>Technologies : </strong></li>
+                <li>HTML / CSS</li>
+                <li>JavaScript</li>
+                <li>Express</li>
+                <li>MongoDB</li>
+                <li>WebSocket</li>
+                <li>Déploiement : Atlas + Render</li>
+            </ul>
+            <img src="images/projetEvalutionII/subscription.PNG" alt="Page d'inscription">
+            <img src="images/projetEvalutionII/game.PNG" alt="Écran de jeu">
+            <img src="images/projetEvalutionII/ranking.PNG" alt="Classement">
+        </div>
+    <div class = "items">
+        <p class = "descriptionItems">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto itaque, enim voluptas ducimus ex quaerat iste at natus quas inventore ea sequi nobis placeat velit adipisci veniam repellat molestiae et unde minus a. Voluptas atque sed beatae. Doloremque omnis molestias minima consequuntur libero tempora accusantium. Alias eveniet eaque possimus quae, ducimus nesciunt molestias hic cupiditate necessitatibus iure, corrupti eum quis perspiciatis sit laudantium ab voluptates soluta nostrum odit temporibus natus praesentium. Cumque cupiditate amet magni expedita accusantium, rerum asperiores! Voluptate saepe corporis veritatis incidunt tenetur.</p>
+    </div>
+    <!-- item 2 -->
+    <p class="itemTitle">Application météo avec requete API</p>
+    <div class="items">
+        <div class="item">
+           
+            <ul>
+                <li><strong>Technologies : </strong></li>
+                <li>HTML / CSS</li>
+                <li>JavaScript</li>
+                <li>Requete API (fetch)</li>
+
+            </ul>
+            <img src="images/meteo/pageAcceuil.PNG" alt="Page d'Accueil">
+            <img src="images/meteo/meteo.PNG" alt="météo">
+
+        </div>
+    <div class = "items">
+        <p class = "descriptionItems">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto itaque, enim voluptas ducimus ex quaerat iste at natus quas inventore ea sequi nobis placeat velit adipisci veniam repellat molestiae et unde minus a. Voluptas atque sed beatae. Doloremque omnis molestias minima consequuntur libero tempora accusantium. Alias eveniet eaque possimus quae, ducimus nesciunt molestias hic cupiditate necessitatibus iure, corrupti eum quis perspiciatis sit laudantium ab voluptates soluta nostrum odit temporibus natus praesentium. Cumque cupiditate amet magni expedita accusantium, rerum asperiores! Voluptate saepe corporis veritatis incidunt tenetur.</p>
+    </div>
+
+    <!-- item 3  -->
+    <p class="itemTitle">To DO List</p>
+    <div class="items">
+       
+        <div class="item">
+           
+            <ul>
+                <li><strong>Technologies : </strong></li>
+                <li>HTML / CSS</li>
+                <li>JavaScript</li>
+                <li>Express</li>
+                <li>MongoDB</li>
+                <li>WebSocket</li>
+                <li>Déploiement : Atlas + Render</li>
+                <li>Version PC et Android</li>
+                <li>---------</li>
+                <img src="images/toDoList/viewPC.PNG" alt="Vue PC">
+            </ul>
+            
+            <img src="images/toDoList/viewAndroid.jpg" class="imageAndroidMax" alt="Vue Android">
+            <img src="images/toDoList/viewAndroid2.jpg" class="imageAndroidMax" alt="Vue Android2">
+        </div>
+    <div class = "items">
+        <p class = "descriptionItems">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto itaque, enim voluptas ducimus ex quaerat iste at natus quas inventore ea sequi nobis placeat velit adipisci veniam repellat molestiae et unde minus a. Voluptas atque sed beatae. Doloremque omnis molestias minima consequuntur libero tempora accusantium. Alias eveniet eaque possimus quae, ducimus nesciunt molestias hic cupiditate necessitatibus iure, corrupti eum quis perspiciatis sit laudantium ab voluptates soluta nostrum odit temporibus natus praesentium. Cumque cupiditate amet magni expedita accusantium, rerum asperiores! Voluptate saepe corporis veritatis incidunt tenetur.</p>
+    </div>
 </body>
 </html>
