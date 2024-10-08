@@ -30,8 +30,8 @@
 
         .item {
             background-color: #16213e;
-            border: 2px solid #00ffcc;
-            border-radius: 8px;
+            border: 3px solid #00ffcc;
+            border-radius: 15px;
             padding: 20px;
             box-shadow: 0px 0px 15px rgba(0, 255, 204, 0.5);
             transition: transform 0.2s, box-shadow 0.2s;
@@ -86,7 +86,7 @@
             transform: scale(0.8); /* Effet de scale au survol */
         }
         .viewMobileImage:hover {
-            transform: scale(0.81); /* Effet de scale au survol */
+            transform: scale(0.83); /* Effet de scale au survol */
         }
 
         /* Responsivité */
