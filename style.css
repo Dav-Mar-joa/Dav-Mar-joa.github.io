@@ -66,15 +66,27 @@
         img {
             height: auto;
             flex: 1 1 75%;
-            max-width: 400px;
+            max-width: 16vw;
             border-radius: 15px;
             border: 2px solid #ff006e;
             transition: transform 0.2s, border-color 0.2s;
+        }
+        .viewPCImage{
+            transform: scale(1.6); /* Effet de scale au survol */
         }
 
         img:hover {
             transform: scale(1.05);
             border-color: #00ffcc;
+        }
+        .viewPCImage:hover{
+            transform: scale(1.65); /* Effet de scale au survol */
+        }
+        .viewMobileImage {
+            transform: scale(0.8); /* Effet de scale au survol */
+        }
+        .viewMobileImage:hover {
+            transform: scale(0.85); /* Effet de scale au survol */
         }
 
         /* Responsivité */
@@ -85,7 +97,17 @@
             }
             img, ul {
                 flex-basis: 100%;
+                transform: none;
                 max-width: 90%;
+                
+            }
+            .viewPCImage {
+                transform: scale(1.1); /* Effet de scale au survol */
+            }
+            .viewMobileImage {
+                transform: scale(0.8); /* Effet de scale au survol */
+                padding-top: 10px;
+                padding-bottom: 10px;
             }
         }
        
