@@ -86,7 +86,7 @@
             transform: scale(0.8); /* Effet de scale au survol */
         }
         .viewMobileImage:hover {
-            transform: scale(0.85); /* Effet de scale au survol */
+            transform: scale(0.82); /* Effet de scale au survol */
         }
 
         /* Responsivité */
