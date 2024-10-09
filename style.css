@@ -159,10 +159,10 @@
         }
 
         .footer {
-            margin-top: 60px;
-            margin-bottom: 60px;
+            margin-top: 35px;
+            margin-bottom: 35px;
             text-align: center;
             font-size: 16px;
-            /* color: #999; */
-            color: red;
+            color: #999;
+            /* color: red; */
         }
